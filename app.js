@@ -1,3 +1,4 @@
+
 //Presentacion con una pregunta para el cliente
 
 alert("Que desea llevar? para salir presione 0")
@@ -28,21 +29,19 @@ while (seleccionarProductos !="0"){
                      
         break; 
     default:
-             break;
+
+   seleccionarProductos = Number(prompt("1-Taza $30 2-Vaso $150 3-Kindle $50000 4-Buda $6000"))
     }
-        seleccionarProductos = Number(prompt("1-Taza $30 2-Vaso $150 3-Kindle $50000 4-Buda $6000"));
-          
+
+    let cantidad
+    let precio 
+
+    function funcionTotal() {
+        cantidad = seleccionarCantidad
+        precio = seleccionarProductos
+        total = cantidad * precio
+
     
-     
-    cantidad =(cantidad,  precio) => {
-        let resultado= cantidad * precio
-        return resultado
     }
-    //Le hacemos saber el costo total de la compra con un alert
-    alert ("el total de la compra es de " + resultado )
-
-
+alert ("el total de la compra es de: " + total)
 }
-
-    
- 
